@@ -7,6 +7,9 @@ pipeline {
                 sh 'ls'
                 sh 'pwd'
                 sh 'python print.py'
+                sh """#!/bin/bash
+                  echo "${env.JOB_NAME}
+               """
             }
         }
     }
