@@ -7,7 +7,7 @@ pipeline {
                 sh 'ls'
                 sh 'pwd'
                 sh 'python print.py'
-                sh 'echo "${env.JOB_NAME}"'
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
     }
