@@ -6,6 +6,7 @@ pipeline {
                 sh 'python --version'
                 sh 'ls'
                 sh 'pwd'
+                sh 'python print.py'
             }
         }
     }
